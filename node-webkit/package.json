@@ -1,0 +1,12 @@
+{
+  "name": "nw-demo",
+  "version": "0.0.1",
+  "main": "index.html",
+  "scripts": {
+    "start": "./node_modules/.bin/nw"
+  },
+  "author": "Romain Durand Saint Omer",
+  "dependencies": {
+    "nw": "^0.12.2"
+  }
+}
