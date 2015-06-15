@@ -8,5 +8,8 @@
   "author": "Romain Durand Saint Omer",
   "dependencies": {
     "nw": "^0.12.2"
+  },
+  "window": {
+    "show": false
   }
 }
