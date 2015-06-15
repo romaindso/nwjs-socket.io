@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Node webkit app</title>
     <style>
-		html { 
-			background-color: orange; 
-			color: #FFF; 
-		}
-		body{
-			-webkit-app-region: drag
-		}
-		button {
-		  -webkit-app-region: no-drag;
-		}
+        html {
+            background-color: orange;
+            color: #FFF;
+        }
+
+        body {
+            -webkit-app-region: drag
+        }
+
+        button {
+            -webkit-app-region: no-drag;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <h1>Hello world !</h1>
-  </body>
+    <button id="close">X</button>
+    <script>
+        function init(window) {
+            document.getElementById("close").addEventListener('click', function () {
+                window.close();
+            });
+        }
+    </script>
+</body>
 </html>
