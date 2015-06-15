@@ -1,6 +1,4 @@
-var gui = require('nw.gui');    	   
-var win = gui.Window.get();
-win.hide();            
+var gui = require('nw.gui');
 
 var socket = io.connect('http://localhost:3000');
 socket.on('start', function(){
@@ -10,6 +8,7 @@ socket.on('start', function(){
         "width": 350,
         "height": 500,
         "position": "center",
-        "resizable": false
+        "resizable": false,
+        "always-on-top": true
     });
 });
